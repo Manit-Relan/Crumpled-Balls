@@ -27,7 +27,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(255);
+  background(174);
   text (mouseX +":" +mouseY,100,50)
   ground.display();
   Dustbin.display();
