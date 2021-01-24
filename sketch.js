@@ -27,7 +27,8 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(255);
+  text (mouseX +":" +mouseY,100,50)
   ground.display();
   Dustbin.display();
   paper.display();
@@ -35,8 +36,8 @@ function draw() {
  
  }
 
-function keyPreseed(){
+function keyPressed(){
   if (keyCode === UP_ARROW){
-    Matter.Body.applyForce (paper.body,paper.body.position,{ x:12,y:-13,})
+    Matter.Body.applyForce (paper.body,paper.body.position,{ x:85,y:-85})
   }
 }
